@@ -43,6 +43,21 @@ pada konfigurasi aplikasi web, antara lain:
   tidak sah dari domain lain.
 - **Rekomendasi**: Mengatur kebijakan CORS dengan lebih ketat.
 
+### 4.3 Manual Testing (XSS)
+Pengujian manual Cross-Site Scripting (XSS) dilakukan pada fitur pencarian.
+Hasil pengujian menunjukkan bahwa aplikasi rentan terhadap serangan XSS
+yang memungkinkan eksekusi script berbahaya pada browser pengguna.
+
+### 4.4 Manual Testing (SQL Injection)
+Pengujian SQL Injection dilakukan pada fitur login menggunakan input
+payload sederhana. Pengujian ini bertujuan untuk memahami potensi
+manipulasi query database melalui input pengguna.
+
+### 4.5 Active Scanning
+Active Scan dilakukan menggunakan OWASP ZAP untuk mendeteksi celah
+keamanan secara lebih mendalam. Hasil pemindaian menunjukkan adanya
+beberapa temuan tambahan terkait konfigurasi dan keamanan aplikasi.
+
 ---
 
 ### 5. Kesimpulan
