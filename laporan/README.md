@@ -19,3 +19,9 @@ menggunakan OWASP ZAP sebagai bagian dari pembelajaran Cyber Security.
 
 ## Status
 Completed
+
+## Metode Pengujian
+- Automated Scan
+- Manual Testing (XSS & SQL Injection)
+- Active Scan
+
