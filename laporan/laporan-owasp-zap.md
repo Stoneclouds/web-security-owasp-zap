@@ -44,9 +44,14 @@ pada konfigurasi aplikasi web, antara lain:
 - **Rekomendasi**: Mengatur kebijakan CORS dengan lebih ketat.
 
 ### 4.3 Manual Testing (XSS)
-Pengujian manual Cross-Site Scripting (XSS) dilakukan pada fitur pencarian.
-Hasil pengujian menunjukkan bahwa aplikasi rentan terhadap serangan XSS
-yang memungkinkan eksekusi script berbahaya pada browser pengguna.
+Pengujian Cross-Site Scripting (XSS) dilakukan secara manual pada fitur
+pencarian aplikasi OWASP Juice Shop dengan menyisipkan payload script
+pada parameter pencarian.
+
+Hasil pengujian menunjukkan bahwa payload tidak dieksekusi oleh browser,
+yang mengindikasikan adanya mekanisme encoding atau proteksi input
+pada aplikasi. Pengujian ini bertujuan untuk memahami bagaimana aplikasi
+menangani input berbahaya dari pengguna.
 
 ### 4.4 Manual Testing (SQL Injection)
 Pengujian SQL Injection dilakukan pada fitur login menggunakan input
