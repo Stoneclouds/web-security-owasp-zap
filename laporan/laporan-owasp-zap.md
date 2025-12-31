@@ -54,9 +54,18 @@ pada aplikasi. Pengujian ini bertujuan untuk memahami bagaimana aplikasi
 menangani input berbahaya dari pengguna.
 
 ### 4.4 Manual Testing (SQL Injection)
-Pengujian SQL Injection dilakukan pada fitur login menggunakan input
-payload sederhana. Pengujian ini bertujuan untuk memahami potensi
-manipulasi query database melalui input pengguna.
+Pengujian SQL Injection dilakukan secara manual pada fitur login aplikasi
+OWASP Juice Shop dengan memasukkan payload sederhana pada field autentikasi.
+
+Hasil pengujian menunjukkan bahwa aplikasi rentan terhadap serangan
+SQL Injection yang memungkinkan bypass proses autentikasi.
+Melalui teknik ini, penyerang dapat masuk sebagai akun administrator
+tanpa menggunakan kredensial yang valid.
+
+Temuan ini menunjukkan bahwa validasi input dan mekanisme keamanan
+pada proses autentikasi sangat penting untuk mencegah manipulasi
+query database oleh pihak tidak berwenang.
+
 
 ### 4.5 Active Scanning
 Active Scan dilakukan menggunakan OWASP ZAP untuk mendeteksi celah
