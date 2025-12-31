@@ -1,9 +1,9 @@
-# Laporan Praktik OWASP ZAP
 # Web Security Analysis using OWASP ZAP
 
 ## Deskripsi
-Repository ini berisi dokumentasi praktik dasar analisis keamanan aplikasi web
-menggunakan OWASP ZAP sebagai bagian dari pembelajaran Cyber Security.
+Repository ini berisi dokumentasi praktik dasar analisis keamanan
+aplikasi web menggunakan OWASP ZAP sebagai bagian dari pembelajaran
+Cyber Security.
 
 ## Target Pengujian
 - OWASP Juice Shop (Localhost)
@@ -11,17 +11,11 @@ menggunakan OWASP ZAP sebagai bagian dari pembelajaran Cyber Security.
 ## Tools
 - OWASP ZAP
 
-## Hasil
-- Automated scanning berhasil dilakukan
-- Ditemukan beberapa isu konfigurasi keamanan
-  seperti Content Security Policy (CSP) Header Not Set
-  dan Cross-Domain Misconfiguration
+## Metode Pengujian
+- Automated Scan
+- Manual Testing (XSS)
+- Manual Testing (SQL Injection)
+- Active Scan
 
 ## Status
 Completed
-
-## Metode Pengujian
-- Automated Scan
-- Manual Testing (XSS & SQL Injection)
-- Active Scan
-
